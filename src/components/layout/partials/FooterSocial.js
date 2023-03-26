@@ -18,7 +18,7 @@ const FooterSocial = ({
     >
       <ul className="list-reset">
         <li>
-          <a href="https://www.facebook.com/SAENITD/">
+          <a href="https://facebook.com/">
             <svg
               width="16"
               height="16"
@@ -31,10 +31,7 @@ const FooterSocial = ({
           </a>
         </li>
         <li>
-          <a href="https://twitter.com/saeindia_nitdgp">
-          
-         
-        
+          <a href="https://twitter.com/">
             <svg
               width="16"
               height="16"
@@ -47,7 +44,7 @@ const FooterSocial = ({
           </a>
         </li>
         <li>
-          <a href="https://instagram.com/sae.nitd?igshid=YmMyMTA2M2Y=">
+          <a href="https://google.com/">
             <svg
               width="16"
               height="16"

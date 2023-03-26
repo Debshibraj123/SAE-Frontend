@@ -1,25 +1,18 @@
-html{
-  scroll-behavior: smooth;
-}
-
-
 .teamCard-upper {
     display: flex !important;
     align-items: center !important;
     justify-content: center !important;
-    /* margin-top: 100px !important; */
+    margin-top: 100px !important;
     flex-wrap: wrap;
-
 }
 
 .box {
     width: 100%;
-    max-width:200px;
-    height: 320px;
+    max-width: 200px;
+    height: 300px;
     margin: 15px;
     display: flex;
-    /* flex-direction: column; */
-    flex-wrap:wrap;
+    flex-direction: column;
     position: relative;
     overflow: hidden;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -78,11 +71,17 @@ html{
 
 
 .heading-team {
+  /* background: #333; */
   display: flex;
   color: white;
-  margin-top: 3%;
+  margin-top: 5%;
 }
-
+/* .heading-team + .heading-team {
+  color: pink;
+}
+.heading-team + .heading-team + .heading-team {
+  color: gold;
+} */
 .heading-team:before,
 .heading-team:after {
   content: '';
@@ -117,7 +116,7 @@ html{
 
 .year{
     text-align: center;
-    margin-top: 7%;
+    margin-top: 0;
     margin-bottom: 0;
     text-shadow: 2px 2px 4px #000000;
     display:inline-block;
@@ -204,60 +203,9 @@ html{
   }
   
 
-  
-.navbar {
-  /* top:2%; */
-  width:100%;
-  list-style-type: none;
-  margin: auto;
-  padding: 0;
-  overflow: hidden;
-  border-radius: 3px;
-  background-color: rgb(62, 62, 62);
-  text-align:center;
-  padding: auto;
- 
-}
-
-
-.navbar a {
-  display:inline-block;
-  margin: 0 3% ;
-  font-size: 23px;
-  font-weight: 700;
-  color: aliceblue;
-  text-align: center;
-  padding: 14px 18px;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-  
-}
-
-.navbar a:hover{
-color:rgb(35, 35, 35);
-}
-
-
-
-@media only screen and (max-width: 820px){
-  .navbar a{
-    font-size: 17px;
-  }
-
-} 
-
   @media only screen and (max-width: 420px){
     .heading-team{
       text-align: center;
     }
-    .navbar{
-      border: 0;
-      margin: 0;
-    }
-    .navbar a{
-      font-size: 10px;
-      font-weight: 400;
-      padding: 0;
-    }
 
-  }
+  } 

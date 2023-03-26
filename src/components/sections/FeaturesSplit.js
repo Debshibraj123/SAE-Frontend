@@ -3,11 +3,6 @@ import classNames from 'classnames';
 import { SectionSplitProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
 import Image from '../elements/Image';
-// import SAEARNH from '../../assets/images/SAEARHN.JPG'
-import GIF from '../../assets/images/About.gif'
-import Ted from '../../assets/images/ted3.JPG'
-import './FeatureSplit.css'
-import SAE from '../../assets/images/SAE.JPG'
 
 const propTypes = {
   ...SectionSplitProps.types
@@ -55,8 +50,8 @@ const FeaturesSplit = ({
   );
 
   const sectionHeader = {
-    title: 'Know About SAE',
-  
+    title: 'Catch us at our best',
+    paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
   };
 
   return (
@@ -64,7 +59,7 @@ const FeaturesSplit = ({
       {...props}
       className={outerClasses}
     >
-      <div className="container" id="split-box">
+      <div className="container">
         <div className={innerClasses}>
           <SectionHeader data={sectionHeader} className="center-content" />
           <div className={splitClasses}>
@@ -75,12 +70,10 @@ const FeaturesSplit = ({
                   ABOUT THE AWESOME US
                   </div>
                 <h3 className="mt-0 mb-12">
-                  What is SAE?
+                  Data-driven insights
                   </h3>
-                <p className="m-0" id="contained">
-                SAEINDIA is a strategic alliance partner of SAE International registered in India as an Indian nonprofit engineering and scientific society dedicated to the advancement of the mobility industry in India. SAEINDIA Collegiate Club of NIT Durgapur was conceived in 2007 with an idea to integrate the students of the college into the international fabric of automobile engineering, adhering to the core principles laid down by SAE International. We are a student body composed of enthusiastic individuals, who are always at a constant strife to learn. This strife is the fuel that propels us to ideate, execute, and consequently deliver a dynamic gamut of events, which receive an extensive participation from various institutes.The outputs of our efforts could be appreciated in a better way by discussing various aspects of our club. 
-
-
+                <p className="m-0">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                   </p>
               </div>
               <div className={
@@ -90,7 +83,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={GIF}
+                  src={require('./../../assets/images/features-split-image-01.png')}
                   alt="Features split 01"
                   width={528}
                   height={396} />
@@ -103,10 +96,10 @@ const FeaturesSplit = ({
                   TEDx NIT Durgapur
                   </div>
                 <h3 className="mt-0 mb-12">
-                  SAE in TEDx
+                  Data-driven insights
                   </h3>
                 <p className="m-0">
-                SAE also conducts TEDxNITDurgapur a part of TED along with Literary Circle, a worldwide, grassroots initiative, that aims to provide a platform for a symphony of voices from a plethora of spheres to propagate ingenious ideas and thoughts. / <a id="tedx-link" className='color-success' href='/ted'>..Know More</a>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
                   </p>
               </div>
               <div className={
@@ -116,7 +109,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src="https://images.pexels.com/photos/16083696/pexels-photo-16083696.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src={require('./../../assets/images/features-split-image-02.png')}
                   alt="Features split 02"
                   width={528}
                   height={396} />
@@ -126,16 +119,14 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  AAROHAN NIT DURGAPUT
+                  SAE IN AAROHAN
                   </div>
                 <h3 className="mt-0 mb-12">
-                  SAE IN AAROHAN
+                  Data-driven insights
                   </h3>
                 <p className="m-0">
-                SAE is also a part of Team Aavishkar which conducts Aarohan, NIT Durgapur's annual Techno-management fest, which includes all facets of technical and festive enthusiasm.
-                 <a id="Arhn-link" href='/arhn'>
-                      ..Know More
-                 </a> </p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua — Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  </p>
               </div>
               <div className={
                 classNames(
@@ -144,7 +135,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src="https://images.pexels.com/photos/16083724/pexels-photo-16083724.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load"
+                  src={require('./../../assets/images/features-split-image-03.png')}
                   alt="Features split 03"
                   width={528}
                   height={396} />

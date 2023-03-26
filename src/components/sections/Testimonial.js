@@ -2,7 +2,6 @@ import React from 'react';
 import classNames from 'classnames';
 import { SectionTilesProps } from '../../utils/SectionProps';
 import SectionHeader from './partials/SectionHeader';
-import './Testimonial.css'
 
 const propTypes = {
   ...SectionTilesProps.types
@@ -15,9 +14,9 @@ const defaultProps = {
 const Testimonial = ({
   className,
   topOuterDivider,
-  // bottomOuterDivider,
+  bottomOuterDivider,
   topDivider,
-  // bottomDivider,
+  bottomDivider,
   hasBgColor,
   invertColor,
   pushLeft,
@@ -27,7 +26,7 @@ const Testimonial = ({
   const outerClasses = classNames(
     'testimonial section',
     topOuterDivider && 'has-top-divider',
-    // bottomOuterDivider && 'has-bottom-divider',
+    bottomOuterDivider && 'has-bottom-divider',
     hasBgColor && 'has-bg-color',
     invertColor && 'invert-color',
     className
@@ -36,7 +35,7 @@ const Testimonial = ({
   const innerClasses = classNames(
     'testimonial-inner section-inner',
     topDivider && 'has-top-divider',
-    // bottomDivider && 'has-bottom-divider'
+    bottomDivider && 'has-bottom-divider'
   );
 
   const tilesClasses = classNames(
@@ -54,7 +53,7 @@ const Testimonial = ({
       {...props}
       className={outerClasses}
     >
-      <div className="container" id="testimonial-box">
+      <div className="container">
         <div className={innerClasses}>
           <SectionHeader data={sectionHeader} className="center-content" />
           <div className={tilesClasses}>
@@ -70,7 +69,7 @@ const Testimonial = ({
                   <span className="testimonial-item-name text-color-high">Aarohan</span>
                   <span className="text-color-low"> / </span>
                   <span className="testimonial-item-link">
-                    <a href="/arhn">Annual Fest</a>
+                    <a href="#0">Annual Fest</a>
                   </span>
                 </div>
               </div>
@@ -87,7 +86,7 @@ const Testimonial = ({
                   <span className="testimonial-item-name text-color-high">TEDx</span>
                   <span className="text-color-low"> / </span>
                   <span className="testimonial-item-link">
-                    <a href="/ted">NIT Durgapur</a>
+                    <a href="#0">NIT Durgapur</a>
                   </span>
                 </div>
               </div>
@@ -104,7 +103,7 @@ const Testimonial = ({
                   <span className="testimonial-item-name text-color-high">Events</span>
                   <span className="text-color-low"> / </span>
                   <span className="testimonial-item-link">
-                    <a href="/events">Work Flow</a>
+                    <a href="#0">Work Flow</a>
                   </span>
                 </div>
               </div>
