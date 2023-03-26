@@ -5,34 +5,14 @@ const About =()=>{
    
     return(
     <>
-    <div className="arhn_about">
-    <div className="arhn_upper">
-      <div className="arhn_logo">
-        <div className="arhn_image">
-          <div className="arhn_camp">
-            <img src="https://images.pexels.com/photos/16070201/pexels-photo-16070201.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load" alt="Image" id="arhn_tent" />
-          </div>
+    <div className="divss container">   
+      <h1 className="headingss">About Us</h1>
+      <div className="profile__inner grid">
+        <div className="profile__img"><img src={img} className="hjgf" alt=""/></div>
+        <div className="profile__text">
+          <p>SAEINDIA is a strategic alliance partner of SAE International registered in India as an Indian nonprofit     engineering and scientific society dedicated to the advancement of the mobility industry in India. SAEINDIA Collegiate Club of NIT Durgapur was conceived in 2007 with an idea to integrate the students of the college into the international fabric of automobile engineering, adhering to the core principles laid down by SAE International. We are a student body composed of enthusiastic individuals, who are always at a constant strife to learn. This strife is the fuel that propels us to ideate, execute, and consequently deliver a dynamic gamut of events, which receive an extensive participation from various institutes.The outputs of our efforts could be appreciated in a better way by discussing various aspects of our club. Autopia is the official Automotive Magazine of the club. The magazine comprises articles in the domains of robotics, automobile and technology, and provides a thorough analysis about the latest innovations which are on the verge of propelling mankind forward! Over 1k+ copies are circulated each year amongst students, teachers and industrialists!  BAJA organised by SAEINDIA is an off-road racing competition in which Team NDORS, the official racing team of NITD, bagged the position of 42nd this year.</p>
         </div>
       </div>
-      <div className="arhn_info">
-        <h1>ABOUT AAROHAN</h1>
-        <p>
-        National Institute of Technology, Durgapur has been a pioneering educational institute for above 50 years. It boasts of students who have achieved par excellence in the field of academics and organization. Aarohan is the Annual Techno-management fest of NIT Durgapur, the 2nd Largest of its kind in the whole of eastern India. It is organised by a group of young enthusiasts under the supervision of highly responsible faculties. This festival has been constantly fostering the enthusiastic students to showcase their talents and uplifting their spirits by taking parts in various events, and imbibing in them a sense of belonging to the competitive world that lies ahead, 
-        </p>
-      </div>
-    </div>
-
-    <div className="arhn_lower">
-      <div className="arhn_info" id="arhn_lower-info">
-        <h1>SAE in AAROHAN</h1>
-        <p>
-        National Institute of Technology, Durgapur has been a pioneering educational institute for above 50 years. It boasts of students who have achieved par excellence in the field of academics and organization. Aarohan is the Annual Techno-management fest of NIT Durgapur, the 2nd Largest of its kind in the whole of eastern India. It is organised by a group of young enthusiasts under the supervision of highly responsible faculties. This festival has been constantly fostering the enthusiastic students to showcase their talents and uplifting their spirits by taking parts in various events, and imbibing in them a sense of belonging to the competitive world that lies ahead,
-        </p>
-      </div>
-      <div className="arhn_slider" id="arhn_lower-img">
-        <img src="https://images.pexels.com/photos/16070143/pexels-photo-16070143.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load "alt="Image" id="arhn_slider" />
-      </div>
-    </div>
     </div>
     </>
     )

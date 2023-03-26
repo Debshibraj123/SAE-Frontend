@@ -7,7 +7,6 @@ import Image from '../elements/Image';
 import Modal from '../elements/Modal';
 import '.././../assets/scss/style.scss';
 
-
 const propTypes = {
   ...SectionProps.types
 }
@@ -70,27 +69,23 @@ const Hero = ({
 // );
 
   return (
-   <>
-   
     <section
       {...props}
       className={outerClasses}
     >
-    
       <div className="container-sm">
         <div className={innerClasses}>
 
           <div className="hero-figure reveal-from-bottom illustration-element-01" data-reveal-value="20px" data-reveal-delay="800">
             <a
-              data-video=""
-              
+              data-video="https://player.vimeo.com/video/174002812"
               href="#0"
               aria-controls="video-modal"
               onClick={openModal}
             >
               <Image
                 className="has-shadow"
-                src="https://img.youtube.com/vi/yXN0HLjVojg/mqdefault.jpg"
+                src={require('./../../assets/images/video-placeholder.jpg')}
                 alt="Hero"
                 width={896}
                 height={504} />
@@ -102,7 +97,7 @@ const Hero = ({
             id="video-modal"
             show={videoModalActive}
             handleClose={closeModal}
-            video="https://www.youtube.com/embed/yXN0HLjVojg"
+            video="https://player.vimeo.com/video/174002812"
             videoTag="iframe" />
 
             {/* <div className='overflow-hidden'>
@@ -131,7 +126,6 @@ const Hero = ({
         </div>
       </div>
     </section>
-    </>
   );
 }
 

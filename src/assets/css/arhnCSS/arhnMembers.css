@@ -73,9 +73,9 @@
   
   .our-team .pic {
     display: inline-block;
-    width: 230px;
-    height: 230px;
-    margin-bottom: 1px;
+    width: 130px;
+    height: 130px;
+    margin-bottom: 50px;
     z-index: 1;
     position: relative;
   }
@@ -111,7 +111,7 @@
   }
   .our-team:hover .pic:after {
     background: #145889;
-  } */
+  }
   .our-team .pic img {
     width: 100%;
     height: 100%;
@@ -176,99 +176,3 @@
       margin-bottom: 10px;
     }
   }
-
-
-  .arhn_members{
-    display: flex;
-    margin-top:140px;
-}
-.arhn_card-list {
-  z-index: 0;
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin-top:80px;
-}
-.arhn_members h1{
-    color: red;
-    font-weight: 900;
-    margin:25px;
-    border-top:2px solid white;
-}
-.arhn_card {
-  margin-bottom:50px;
-  width:300px;
-  height: 300px;
-  border-radius: 40px;
-box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
-  cursor: pointer;
-  transition: 0.4s;
-
-  
-}
-
-.arhn_card .arhn_card_image {
-  width: inherit;
-  height: inherit;
-  border-radius: 40px;
-}
-
-.arhn_card .arhn_card_image img {
-  width: inherit;
-  height: inherit;
-  border-radius: 40px;
-  object-fit: cover;
-}
-
-.arhn_card .arhn_card_title {
-  text-align: center;
-  border-radius: 0px 0px 40px 40px;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 30px;
-  margin-top: -80px;
-  height: 40px;
-}
-
-.arhn_card:hover {
-  transform: scale(0.9, 0.9);
-  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
-    -5px -5px 30px 15px rgba(0,0,0,0.22);
-}
-
-.arhn_title-white {
-  color: white;
-}
-
-.arhn_title-black {
-  color: black;
-}
-
-@media (max-width:768px)
-{
-  .arhn_members{
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items: center;
-  }
-  .arhn_pic-ctn > img {
-    position: absolute;
-    width:300px;
-    height:200px;
-    left:20px;
-    opacity:0;
-    border-radius:20px;
-  }
-  .arhn_team{
-    z-index: 0;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  
-}

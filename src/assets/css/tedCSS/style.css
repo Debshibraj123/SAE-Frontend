@@ -6,7 +6,7 @@
     -moz-column-width: 33%;
     column-width: 33%;
     padding: 0 12px;
-    margin-top:140px;
+    margin-top: 20%;
 }
 
 .gallery .pics{
@@ -45,7 +45,7 @@
         -webkit-column-width: 100%;
         -moz-column-width: 100%;
         column-width: 100%;
-        margin-top:50px;
+    
     }
 
     

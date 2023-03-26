@@ -93,11 +93,10 @@ Font Styling
 
 .para {
     font: var(--var-para);
-    font-size: 15px;
+    font-size: 20px;
     text-align: center;
-    margin-top: 5%;
+    margin-top: 10%;
     color: var(--var-soft-blue);
-    padding: 8px;
 }
 
 span {

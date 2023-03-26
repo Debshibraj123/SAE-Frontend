@@ -33,9 +33,9 @@
     z-index:0
   }
   @keyframes fader {
-    0%,30%,100%{ background-image:url('https://imagizer.imageshack.com/img923/2929/77BUMy.jpg')}
-    33%,60% { background-image: url('https://imagizer.imageshack.com/img923/360/LWmxVZ.jpg'); }
-    63%,97% { background-image: url('https://imagizer.imageshack.com/img922/1165/8vO4GL.jpg') }
+    0%,30%,100%{ background-image:url('../images/e1.JPG')}
+    33%,60% { background-image: url('../images/e1.JPG'); }
+    63%,97% { background-image: url('../images/e1.JPG') }
   }
   .hero h1{
     padding:.5em;
@@ -75,7 +75,7 @@
   .heading1>h1{
     font-size: 3rem;
     margin-top: 6rem;
-    color: #e2e2e2;
+    color: #999;
     font-family: 'Cormorant Infant', serif;
   }
   .heading1{
@@ -90,114 +90,6 @@
   }
   
 
-
-  /*Drag and Drift*/
-
-@import url("https://fonts.googleapis.com/css?family=Arvo");
-
-.DandD-section {
-  display: none;
-  padding: 2rem;
-}
-@media screen and (min-width: 768px) {
-  .DandD-section {
-    padding: 4rem;
-  }
-}
-@supports (display: grid) {
-  .DandD-section {
-    display: block;
-  }
-}
-
-
-
-.DandDgrid {
-  display: grid;
-  grid-gap: 30px;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  grid-auto-rows: 150px;
-  grid-auto-flow: row dense;
-}
-
-.item {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  box-sizing: border-box;
-  background: #0c9a9a;
-  color: #fff;
-  grid-column-start: auto;
-  grid-row-start: auto;
-  color: #fff;
-  background: url("https://imagizer.imageshack.com/img924/1256/R42hgt.jpg");
-  background-size: cover;
-  background-position: center;
-  box-shadow: -2px 2px 10px 0px rgba(68, 68, 68, 0.4);
-  transition: transform 0.3s ease-in-out;
-  cursor: pointer;
-  counter-increment: item-counter;
-}
-.item:nth-of-type(2n) {
-  background-image: url("https://imagizer.imageshack.com/img922/3739/CwowsV.jpg");
-}
-.item:nth-of-type(5n) {
-  background-image: url("https://imagizer.imageshack.com/img923/6112/1yWCXP.jpg");
-}
-.item:nth-of-type(3n) {
-  background-image: url("https://imagizer.imageshack.com/img924/9814/OCCzxB.jpg");
-}
-.item:nth-of-type(4n) {
-  background-image: url("https://imagizer.imageshack.com/img923/9007/QGCdst.jpg");
-}
-.item:after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: black;
-  opacity: 0.3;
-  transition: opacity 0.3s ease-in-out;
-}
-.item:hover {
-  transform: scale(1.05);
-}
-.item:hover:after {
-  opacity: 0;
-}
-.item--medium {
-  grid-row-end: span 2;
-}
-.item--large {
-  grid-row-end: span 3;
-}
-.item--full {
-  grid-column-end: auto;
-}
-@media screen and (min-width: 768px) {
-  .item--full {
-    grid-column: 1/-1;
-    grid-row-end: span 2;
-  }
-}
-.item__details {
-  position: relative;
-  z-index: 1;
-  padding: 15px;
-  color: #444;
-  background: #fff;
-  text-transform: lowercase;
-  letter-spacing: 1px;
-  color: #828282;
-}
-.item__details:before {
-  content: counter(item-counter);
-  font-weight: bold;
-  font-size: 1.1rem;
-  padding-right: 0.5em;
-  color: #444;
-}
 
   /* SDV Design */
   @import url("https://fonts.googleapis.com/css?family=Arvo");
@@ -264,28 +156,22 @@ html {
   counter-increment: sdv-sdv-item-counter;
 }
 .sdv-item:nth-of-type(1n) {
-  background-image: url("https://imagizer.imageshack.com/img924/6342/j7z5DU.jpg");
+  background-image: url("../images/sdv3.JPG");
 }
 .sdv-item:nth-of-type(2n) {
-  background-image: url("https://imagizer.imageshack.com/img922/8561/gU3VLK.jpg");
+  background-image: url("../images/sdv6.JPG");
 }
 .sdv-item:nth-of-type(3n) {
-  background-image: url("https://imagizer.imageshack.com/img923/2492/pj6T2M.jpg");
+  background-image: url("../images/sdv2.JPG");
 }
 .sdv-item:nth-of-type(4n) {
-  background-image: url("https://imagizer.imageshack.com/img924/4034/Vmdwvw.jpg");
+  background-image: url("../images/sdv1.JPG");
 }
 .sdv-item:nth-of-type(5n) {
-  background-image: url("https://imagizer.imageshack.com/img922/5335/n0KJdy.jpg");
+  background-image: url("../images/sdv4.JPG");
 }
 .sdv-item:nth-of-type(6n) {
-  background-image: url("https://imagizer.imageshack.com/img924/5435/aGIAp2.jpg");
-}
-.sdv-item:nth-of-type(7n) {
-  background-image: url("https://imagizer.imageshack.com/img923/6116/2OywZf.jpg");
-}
-.sdv-item:nth-of-type(8n) {
-  background-image: url("https://imagizer.imageshack.com/img922/4087/gcYppL.jpg");
+  background-image: url("../images/sdv5.JPG");
 }
 .sdv-item:after {
   content: "";
@@ -296,10 +182,10 @@ html {
   opacity: 0.3;
   transition: opacity 0.3s ease-in-out;
 }
-.sdv-item:hover {
+.item:hover {
   transform: scale(1.05);
 }
-.sdv-item:hover:after {
+.item:hover:after {
   opacity: 0;
 }
 .item--medium {
@@ -335,28 +221,28 @@ html {
   color: #444;
 }
 
+/*Drag and Drift*/
 
-/* FIST  */
 @import url("https://fonts.googleapis.com/css?family=Arvo");
 
-.fist-section {
+.DandD-section {
   display: none;
   padding: 2rem;
 }
 @media screen and (min-width: 768px) {
-  .fist-section {
+  .DandD-section {
     padding: 4rem;
   }
 }
 @supports (display: grid) {
-  .fist-section {
+  .DandD-section {
     display: block;
   }
 }
 
 
 
-.fistgrid {
+.DandDgrid {
   display: grid;
   grid-gap: 30px;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -364,7 +250,7 @@ html {
   grid-auto-flow: row dense;
 }
 
-.fist-item {
+.item {
   position: relative;
   display: flex;
   flex-direction: column;
@@ -375,6 +261,7 @@ html {
   grid-column-start: auto;
   grid-row-start: auto;
   color: #fff;
+  background: url("../images/dd2.JPG");
   background-size: cover;
   background-position: center;
   box-shadow: -2px 2px 10px 0px rgba(68, 68, 68, 0.4);
@@ -382,25 +269,19 @@ html {
   cursor: pointer;
   counter-increment: item-counter;
 }
-.fist-item:nth-of-type(1n) {
-  background-image: url("https://imagizer.imageshack.com/img923/2127/q1eMxY.jpg");
+.item:nth-of-type(3n) {
+  background-image: url("../images/dd1.JPG");
 }
-.fist-item:nth-of-type(2n) {
-  background-image: url("https://imagizer.imageshack.com/img923/4769/WWbyQQ.jpg");
+.item:nth-of-type(4n) {
+  background-image: url("../images/dd3.JPG");
 }
-.fist-item:nth-of-type(3n) {
-  background-image: url("https://imagizer.imageshack.com/img924/9513/RR9noc.jpg");
+.item:nth-of-type(5n) {
+  background-image: url("../images/dd4.JPG");
 }
-.fist-item:nth-of-type(4n) {
-  background-image: url("https://imagizer.imageshack.com/img923/8760/dlE35C.jpg");
+.item:nth-of-type(6n) {
+  background-image: url("../images/dd5.JPG");
 }
-.fist-item:nth-of-type(5n) {
-  background-image: url("https://imagizer.imageshack.com/img923/8090/qeYL6D.jpg");
-}
-.fist-item:nth-of-type(6n) {
-  background-image: url("https://imagizer.imageshack.com/img922/549/mROcqY.jpg");
-}
-.fist-item:after {
+.item:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -409,10 +290,10 @@ html {
   opacity: 0.3;
   transition: opacity 0.3s ease-in-out;
 }
-.fist-item:hover {
+.item:hover {
   transform: scale(1.05);
 }
-.fist-item:hover:after {
+.item:hover:after {
   opacity: 0;
 }
 .item--medium {
@@ -446,165 +327,4 @@ html {
   font-size: 1.1rem;
   padding-right: 0.5em;
   color: #444;
-}
-
-/* /AAROHAN/ */
-
-  
-.carous-content {
-  display: flex;
-  margin: 0 auto;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 1000px;
-}
-
-.carous-card {
-  color: inherit;
-  cursor: pointer;
-  width: calc(33% - 2rem);
-  min-width: calc(33% - 2rem);
-  height: 400px;
-  min-height: 400px;
-  perspective: 1000px;
-  margin: 1rem;
-  position: relative;
-}
-@media screen and (max-width: 800px) {
-  .carous-card {
-    width: calc(50% - 2rem);
-  }
-}
-@media screen and (max-width: 500px) {
-  .carous-card {
-    width: 100%;
-  }
-}
-
-.front,
-.back {
-  display: flex;
-  border-radius: 6px;
-  background-position: center;
-  background-size: cover;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  transform-style: preserve-3d;
-  transition: ease-in-out 600ms;
-}
-
-.front {
-  background-size: cover;
-  padding: 2rem;
-  font-size: 1.618rem;
-  font-weight: 600;
-  color: #fff;
-  overflow: hidden;
-  font-family: Poppins, sans-serif;
-}
-.front:before {
-  position: absolute;
-  display: block;
-  content: "";
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  opacity: 0.25;
-  z-index: -1;
-}
-.carous-card:hover .front {
-  transform: rotateY(180deg);
-}
-.carous-card:nth-child(even):hover .front {
-  transform: rotateY(-180deg);
-}
-
-.back {
-  background: #2d2d2d;
-  transform: rotateY(-180deg);
-  padding: 0 2em;
-}
-
-.carous-card:hover .back {
-  transform: rotateY(0deg);
-}
-.carous-card:nth-child(even) .back {
-  transform: rotateY(180deg);
-}
-.carous-card:nth-child(even) .back .button {
-  background: linear-gradient(135deg, #e61a80, #e61a3c);
-}
-.carous-card:nth-child(even) .back .button:before {
-  box-shadow: 0 0 10px 10px rgba(230, 26, 60, 0.25);
-  background-color: rgba(230, 26, 60, 0.25);
-}
-.carous-card:nth-child(even):hover .back {
-  transform: rotateY(0deg);
-}
-
-.custom-btn {
-  width: 130px;
-  height: 40px;
-  color: #fff;
-  border-radius: 5px;
-  padding: 10px 25px;
-  font-family: 'Lato', sans-serif;
-  font-weight: 500;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  position: relative;
-  display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-  outline: none;
-}
-.btn-5 {
-  width: 130px;
-  height: 40px;
-  line-height: 42px;
-  padding: 0;
-  border: none;
-  background: rgb(255,27,0);
-background: linear-gradient(0deg, rgba(255,27,0,1) 0%, rgba(251,75,2,1) 100%);
-}
-.btn-5:hover {
-  color: #f0094a;
-  background: transparent;
-   box-shadow:none;
-}
-.btn-5:before,
-.btn-5:after{
-  content:'';
-  position:absolute;
-  top:0;
-  right:0;
-  height:2px;
-  width:0;
-  background: #f0094a;
-  box-shadow:
-   -1px -1px 5px 0px #fff,
-   7px 7px 20px 0px #0003,
-   4px 4px 5px 0px #0002;
-  transition:400ms ease all;
-}
-.btn-5:after{
-  right:inherit;
-  top:inherit;
-  left:0;
-  bottom:0;
-}
-.btn-5:hover:before,
-.btn-5:hover:after{
-  width:100%;
-  transition:800ms ease all;
 }
